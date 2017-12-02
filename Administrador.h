@@ -22,5 +22,8 @@ class Administrador : public Personal{
 		int getEmpleadosDespedidos();
 		void setEmpleadosDespedidos(int);
 
+		virtual ~Administrador();
+
+
 };
 #endif

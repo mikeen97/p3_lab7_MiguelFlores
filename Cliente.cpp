@@ -19,7 +19,6 @@ string Cliente::getDireccion(){
 void Cliente::setRatingRest(int RatingRest){
    this-> RatingRest=RatingRest;
 }
-
 int Cliente::getRatingRest(){
    return RatingRest;
 }

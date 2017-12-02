@@ -6,7 +6,8 @@ Personal::Personal(string UserName,string Password,string Nombre,int Edad,string
 }
 Personal::Personal(){
 
-}void Personal::setAnoContratacion(string AnoContratacion){
+}
+void Personal::setAnoContratacion(string AnoContratacion){
    this-> AnoContratacion=AnoContratacion;
 }
 string Personal::getAnoContratacion(){

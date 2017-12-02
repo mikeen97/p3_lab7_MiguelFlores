@@ -7,15 +7,17 @@ using namespace std;
 
 #ifndef LAVAPLATOS_H
 #define LAVAPLATOS_H
-class LavaPlatos : Personal{
+class LavaPlatos : public Personal{
 	protected:
 		int NivelMotivacion;
 	public:
 		LavaPlatos(string,string,string,int,string,int,string,double,int);		
-		LavaPlatos(int);
 		LavaPlatos();
 		int getNivelMotivacion();
 		void setNivelMotivacion(int);
+
+		virtual ~LavaPlatos();
+
 
 };
 #endif

@@ -35,5 +35,8 @@ class Usuario{
 		int getNumeroTelefonico();
 		void setNumeroTelefonico(int);
 
+		virtual ~Usuario();
+		
+
 };
 #endif

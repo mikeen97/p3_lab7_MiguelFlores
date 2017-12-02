@@ -8,15 +8,16 @@ using namespace std;
 
 #ifndef MESEROS_H
 #define MESEROS_H
-class Meseros : Personal{
+class Meseros : public Personal{
 	protected:
 		vector<string> ListaPlatillos;
 	public:
 		Meseros(string,string,string,int,string,int,string,double);
-		Meseros(vector<string>);
 		Meseros();
 		vector<string> getListaPlatillos();
 		void setListaPlatillos(string);
+
+		virtual ~Meseros();
 
 };
 #endif

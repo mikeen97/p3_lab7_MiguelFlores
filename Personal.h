@@ -13,13 +13,14 @@ class Personal : public Usuario{
 		double Sueldo;
 	public:
 		Personal(string,string,string,int,string,int,string,double);//contructor sobrecargado.
-		Personal(string,double);
 		Personal();
 		string getAnoContratacion();
 		void setAnoContratacion(string);
 
 		double getSueldo();
 		void setSueldo(double);
+
+		virtual ~Personal();
 
 };
 #endif
