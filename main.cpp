@@ -8,6 +8,8 @@
 #include "LavaPlatos.h"
 #include "Meseros.h"
 #include <vector>
+#include <typeinfo>
+
 
 using namespace std;
 
@@ -23,16 +25,16 @@ int main(){
 	while(menu1!=3){
 		cout<<"------MENU------\n";
 		cout<<"1)Login\n";
-		cout<<"2)Registrarse\n";
+		cout<<"2)Registrar Administrador\n";
 		cout<<"3) SALIR\n";
 		cin>>menu1;
 		if (menu1==1){
 			int PosUser=0;
 			bool ingresarSistema=false;
 			string verifUser="",verifPassw="";
-			cout<<"Ingrese su Usuario\n";
+			cout<<"Ingrese su Usuario Administrador\n";
 			cin>>verifUser;
-			cout<<"Ingrese su Password\n";
+			cout<<"Ingrese su Password Administrador\n";
 			cin>>verifPassw;
 			for (int i = 0; i < listUsuarios.size(); ++i){
 				if (listUsuarios.at(i)->getUserName()==verifUser&&listUsuarios.at(i)->getPassword()==verifPassw){
@@ -45,8 +47,10 @@ int main(){
 			while(ingresarSistema==true){
 				cout<<"Ingreso al Sistema Bienvenido : "<<PosUser<<"\n";
 				cout<<"LISTA "<<listUsuarios.size()<<"\n";
+				cout<<typeid(listUsuarios[PosUser]).name()<<endl;
 				cout<<dynamic_cast<Administrador*>(listUsuarios[PosUser])->getUserName()<<"JAJAJA"<<"pos"<<PosUser<<endl;
-				if (dynamic_cast<Administrador*>(listUsuarios.at(PosUser))){
+				//if (dynamic_cast<Administrador*>(listUsuarios.at(PosUser))){
+				if (typeid(Administrador)==typeid(*listUsuarios[PosUser])){
 					int menuCliente=0;
 					string userName="",password="",nombre="",id="";
 					int edad=0,numeroTelefono=0;
