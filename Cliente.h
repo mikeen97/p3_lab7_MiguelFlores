@@ -7,11 +7,12 @@ using namespace std;
 
 #ifndef CLIENTE_H
 #define CLIENTE_H
-class Cliente : Usuario{
-	protected:
+class Cliente : public Usuario{
+	public:
 		string Direccion;
 		int RatingRest;
 	public:
+		Cliente(string,string,string,int,string,int,string,int);//contructor sobrecargado con usuario.
 		Cliente(string,int);
 		Cliente();
 		string getDireccion();

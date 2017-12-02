@@ -11,6 +11,7 @@ class Chef : Personal{
 	protected:
 		string PlatilloFavorito;
 	public:
+		Chef(string,string,string,int,string,int,string,double,string);
 		Chef(string);
 		Chef();
 		string getPlatilloFavorito();

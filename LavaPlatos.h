@@ -11,6 +11,7 @@ class LavaPlatos : Personal{
 	protected:
 		int NivelMotivacion;
 	public:
+		LavaPlatos(string,string,string,int,string,int,string,double,int);		
 		LavaPlatos(int);
 		LavaPlatos();
 		int getNivelMotivacion();

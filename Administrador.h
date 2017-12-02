@@ -7,11 +7,13 @@ using namespace std;
 
 #ifndef ADMINISTRADOR_H
 #define ADMINISTRADOR_H
-class Administrador : Personal{
-	protected:
+
+class Administrador : public Personal{
+	public:
 		int EmpleadosContratados;
 		int EmpleadosDespedidos;
 	public:
+		Administrador(string,string,string,int,string,int,string,double,int,int);//contructor sobrecargado de Administrador
 		Administrador(int,int);
 		Administrador();
 		int getEmpleadosContratados();

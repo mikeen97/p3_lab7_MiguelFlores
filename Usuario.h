@@ -7,7 +7,7 @@ using namespace std;
 #ifndef USUARIO_H
 #define USUARIO_H
 class Usuario{
-	protected:
+	public:
 		string UserName;
 		string Password;
 		string Nombre;
