@@ -11,7 +11,7 @@ Administrador::Administrador(){
 }
 
 void Administrador::setEmpleadosContratados(int EmpleadosContratados){
-   this-> EmpleadosContratados=EmpleadosContratados;
+   this-> EmpleadosContratados+=EmpleadosContratados;
 }
 
 
@@ -21,7 +21,7 @@ int Administrador::getEmpleadosContratados(){
 
 
 void Administrador::setEmpleadosDespedidos(int EmpleadosDespedidos){
-   this-> EmpleadosDespedidos=EmpleadosDespedidos;
+   this-> EmpleadosDespedidos-=EmpleadosDespedidos;
 }
 
 
