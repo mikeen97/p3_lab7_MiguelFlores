@@ -22,3 +22,6 @@ void Cliente::setRatingRest(int RatingRest){
 int Cliente::getRatingRest(){
    return RatingRest;
 }
+Cliente::~Cliente(){
+	
+}

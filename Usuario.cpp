@@ -46,4 +46,7 @@ void Usuario::setNumeroTelefonico(int NumeroTelefonico){
 int Usuario::getNumeroTelefonico(){
    return NumeroTelefonico;
 }
+Usuario::~Usuario(){
+   
+}
 

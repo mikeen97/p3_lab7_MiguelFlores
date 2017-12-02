@@ -15,3 +15,6 @@ void Chef::setPlatilloFavorito(string PlatilloFavorito){
 string Chef::getPlatilloFavorito(){
    return PlatilloFavorito;
 }
+Chef::~Chef(){
+	
+}

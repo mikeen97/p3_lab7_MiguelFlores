@@ -15,3 +15,6 @@ void LavaPlatos::setNivelMotivacion(int NivelMotivacion){
 int LavaPlatos::getNivelMotivacion(){
    return NivelMotivacion;
 }
+LavaPlatos::~LavaPlatos(){
+	
+}

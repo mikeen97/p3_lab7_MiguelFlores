@@ -19,3 +19,6 @@ void Personal::setSueldo(double Sueldo){
 double Personal::getSueldo(){
    return Sueldo;
 }
+Personal::~Personal(){
+	
+}

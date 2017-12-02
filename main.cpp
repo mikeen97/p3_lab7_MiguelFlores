@@ -38,6 +38,7 @@ int main(){
 				ingresarSistema==true;
 				cont++;
 				break;
+				cout<<"Jajaja";
 			}
 		}
 		while(ingresarSistema==true){

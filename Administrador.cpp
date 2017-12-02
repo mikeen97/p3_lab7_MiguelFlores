@@ -28,5 +28,8 @@ void Administrador::setEmpleadosDespedidos(int EmpleadosDespedidos){
 int Administrador::getEmpleadosDespedidos(){ 
    return EmpleadosDespedidos;
 }
+Administrador::~Administrador(){
+	
+}
 
 

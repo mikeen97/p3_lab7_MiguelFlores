@@ -14,3 +14,6 @@ void Meseros::setListaPlatillos(string m){
 vector<string> Meseros::getListaPlatillos(){
    return ListaPlatillos;
 }
+Meseros::~Meseros(){
+	
+}
