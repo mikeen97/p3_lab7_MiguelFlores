@@ -16,7 +16,9 @@ class Chef : public Personal{
 		string getPlatilloFavorito();
 		void setPlatilloFavorito(string);
 
+
 		virtual ~Chef();
+		virtual string escritura();
 
 
 };

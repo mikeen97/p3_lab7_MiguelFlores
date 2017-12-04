@@ -36,6 +36,9 @@ class Usuario{
 		void setNumeroTelefonico(int);
 
 		virtual ~Usuario();
+		virtual string escritura();
+
+
 		
 
 };

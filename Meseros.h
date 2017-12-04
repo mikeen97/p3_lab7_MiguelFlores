@@ -16,8 +16,11 @@ class Meseros : public Personal{
 		Meseros();
 		vector<string> getListaPlatillos();
 		void setListaPlatillos(string);
+		void eliminarPlato(int);//elei
+		void eliminarLista();
 
 		virtual ~Meseros();
+		virtual string escritura();
 
 };
 #endif

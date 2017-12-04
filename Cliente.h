@@ -21,6 +21,7 @@ class Cliente : public Usuario{
 		void setRatingRest(int);
 
 		virtual ~Cliente();
+		virtual string escritura();
 
 
 };

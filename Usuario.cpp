@@ -1,4 +1,5 @@
 #include "Usuario.h"
+#include <sstream>
 
 Usuario::Usuario(string UserName,string Password,string Nombre,int Edad,string Id,int NumeroTelefonico){
 	this->UserName=UserName;
@@ -48,5 +49,30 @@ int Usuario::getNumeroTelefonico(){
 }
 Usuario::~Usuario(){
    
+}
+string Usuario::escritura(){
+   std::stringstream sstm;
+   string tipo="U";
+   string edad1="",numeroTelefonico1="",sueldo1="",empleadosContratados1="";
+   string retVal="";
+   //tipo
+   retVal+=tipo+";";
+   //username
+   retVal+=UserName+";";
+   //password
+   retVal+=Password+";";
+   //nombre
+   retVal+=Nombre+";";
+   //edad
+    sstm<<Edad;
+    edad1=sstm.str();
+    retVal+=edad1+";";
+    //id 
+   retVal+=Id+";";
+   //Numero telefonico
+    sstm<<NumeroTelefonico;
+    numeroTelefonico1= sstm.str();
+    retVal+=numeroTelefonico1+",";
+    return retVal;
 }
 

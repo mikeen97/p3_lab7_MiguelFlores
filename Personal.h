@@ -21,6 +21,7 @@ class Personal : public Usuario{
 		void setSueldo(double);
 
 		virtual ~Personal();
+		virtual string escritura();
 
 };
 #endif

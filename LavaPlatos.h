@@ -17,6 +17,7 @@ class LavaPlatos : public Personal{
 		void setNivelMotivacion(int);
 
 		virtual ~LavaPlatos();
+		virtual string escritura();
 
 
 };
