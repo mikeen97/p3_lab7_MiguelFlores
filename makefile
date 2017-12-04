@@ -12,3 +12,9 @@ Usuario:	Usuario.cpp Usuario.h
 	g++ -std=c++11 Meseros.cpp
 clean:
 	rm  *.o main 
+
+
+
+
+
+	
